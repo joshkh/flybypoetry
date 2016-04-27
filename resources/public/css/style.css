@@ -1,0 +1,18 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+body {
+  background: #424242;
+  font-family: 'Open Sans', sans-serif;
+}
+div.magnet {
+  background: white;
+  padding: 10px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #E8E8E8;
+  position: relative;
+}
+div.canvas {
+  background: #00aeef;
+  width: 700px;
+  height: 400px;
+}

@@ -1,0 +1,36 @@
+(rand-nth {:x 1 :y 2})
+(rand-nth '(1 2 3 4 5))
+exit
+(in-ns core)
+(in-ns flybypoetry.core)
+dictionary
+(-main)
+(count @dictionary)
+(rand-nth @dictionary)
+(take 1 (filter #(= :verb (:pos %)) @dictionary))
+(rand-nth (filter #(= :verb (:pos %)) @dictionary))
+exit
+(-main)
+(rand-adjective)
+(map :pos @dictionary)
+(distinct (map :pos @dictionary))
+exit
+(-main)
+(rand-adverb)
+(take 3 (repeatedly rand-noun))
+(take 3 (repeatedly rand-verb))
+exit
+(into [] [1 2 3])
+(into [] [1 2 3] [4 5])
+(conj '(1 2 3) '(4 5 6))
+(concat '(1 2 3) '(4 5 6))
+(concat '(1 2 3) '(4 5 6) '(9 12 15))
+exit
+(build)
+(take 10 (repeatedly (rand-noun)))
+(take 10 (repeatedly rand-noun))
+exit
+(build)
+(grab-bag)
+(take 10 (repeatedly rand-noun))
+exit
